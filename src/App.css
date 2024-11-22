@@ -119,6 +119,32 @@ header {
   color: var(--secondary-font-color);
 }
 
+.nav-item {
+  position: relative;
+}
+
+.nav-item:hover .submenu {
+  display: flex;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background-color);
+  box-shadow: var(--std-box-shadow);
+  border-radius: var(--std-border-radius);
+  padding: 0.5em 0;
+}
+
+.submenu a {
+  padding: 0.5em 1em;
+  width: 100%;
+  text-align: left;
+}
+
 @keyframes slide-in {
   from {
     transform: translateY(-100%);
@@ -153,6 +179,28 @@ header {
     animation: none;
     box-shadow: none;
     background-color: transparent;
+  }
+
+  .nav-menu a {
+    width: auto;
+    text-align: center;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--background-color);
+    box-shadow: var(--std-box-shadow);
+    border-radius: var(--std-border-radius);
+    padding: 0.5em 0;
+  }
+
+  .submenu a {
+    padding: 0.5em 1em;
+    width: 100%;
+    text-align: left;
   }
 }
 
