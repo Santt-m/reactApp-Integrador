@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header>
-      <a href="./index.html"><img className="logo" src="./src/assets/logo.png" alt="Logo" /></a>
+      <a href="/" className="logo"><img className="logo" src="./src/assets/logo.png" alt="Logo" /></a>
       <button className="nav-toggle" onClick={toggleMenu}>
         ☰
       </button>
